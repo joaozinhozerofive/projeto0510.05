@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-colorbody: #f7f4f4d2;
+    --bg-colorbutton: rgba(41, 187, 5, 0.603);
+
+    --fc-text:rgba(20, 20, 75, 1.950);
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-head:'Oswald', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--ff-body);
+    background-color: var(--bg-colorbody);
+}
+
+.search-only {
+    position: absolute;
+    opacity: 0;
+}
+
+#app{
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 3rem;
+}
+
+#app header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: var(--fc-text);
+    font-family: var(--ff-head);
+
+    margin: 2.5rem 0;
+}
+
+header h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    height: 3.2rem;
+    border: 1px solid #dfdede;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 0.8rem;
+}
+
+.search button{
+    border: none;
+    border-radius: 0 .4rem  .4rem 0;
+    height: 3.2rem;
+    background-color: var(--bg-colorbutton);
+    padding: 0.8rem;
+}
+
+.search button:hover{
+    cursor: pointer;
+    filter: brightness(1.3);
+}
+
+table{
+    width: 100%;
+    box-shadow: 0rem 1rem 2rem -1rem rgb(146, 139, 139);
+    border-collapse: collapse;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--fc-text);
+}
+table th{
+    background-color: var(--bg-colorbutton);
+    text-align: left;
+    font-weight: normal;
+    font-family: var(--ff-body);
+    padding: 1.5rem;
+}
+
+table th:first-child{
+    border-radius: 1rem 0 0 0;
+}
+
+table th:last-child {
+    border-radius: 0 1rem 0 0;
+}
+
+table tr:nth-child(odd) {
+    background: #ddd;
+}
+
+tr.data-base {
+    font-family: var(--ff-body);
+}
+
+td.user img{
+    border-radius: 50%;
+    width: 5rem;
+}
+
+table tbody {
+    background-color: #fff3f3;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+td {
+    text-align: center;
+}
+
+td.user a{
+    text-decoration: none;
+}
+
+td.user p{
+    font-weight: 900;
+    color: black;
+}
+
+button.remove{
+    border: none;
+    background: none;
+    color: rgb(185, 9, 9);
+    cursor: pointer;
+}
+
+
+
+
+        
